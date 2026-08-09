@@ -27,18 +27,14 @@ Temporary Items
 .apdisk
 
 ### Xcode ###
-# Xcode
-#
-# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-
 ## User settings
 xcuserdata/
 
-## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+## compatibility with Xcode 8 and earlier
 *.xcscmblueprint
 *.xccheckout
 
-## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+## compatibility with Xcode 3 and earlier
 build/
 DerivedData/
 *.moved-aside
@@ -58,9 +54,18 @@ DerivedData/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-### Projects ###
+### Regenerated Xcode projects / workspaces ###
 *.xcodeproj
 *.xcworkspace
+
+### Build artifacts ###
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.app
+*.xcarchive
 
 ### Tuist derived files ###
 graph.dot
@@ -68,3 +73,9 @@ Derived/
 
 ### Tuist managed dependencies ###
 Tuist/.build
+
+### Swift Package Manager ###
+.swiftpm/
+Packages/
+Package.resolved
+!Tuist/Package.swift
