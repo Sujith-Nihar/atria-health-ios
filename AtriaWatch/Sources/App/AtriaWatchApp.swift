@@ -3,12 +3,12 @@ import AtriaDesignSystem
 import SwiftUI
 
 @main
-struct AtriaApp: App {
+struct AtriaWatchApp: App {
     private let dependencies = AppDependencies.live
 
     var body: some Scene {
         WindowGroup {
-            RootTabView()
+            WatchRootView()
                 .appDependencies(dependencies)
         }
     }
